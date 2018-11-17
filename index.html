@@ -1,0 +1,136 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>My todo List.</title>
+    
+  </head>
+ <body ng-app="registration" ng-controller="myCtrl">
+    <nav class="navbar navbar-dark bg-primary">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">Angular JS Registration application</a>
+        </div>
+      </div>
+   </nav>
+   
+   
+     <div class="container">
+       <form class="form-horizontal" id="myForm">
+         <legend>Registration or Signup Form</legend>
+         <div class="form-group">
+           <label for="inputFirstName" class="col-lg-2 control-label">FirstName</label>
+           <div class="col-lg-10">
+             <input type="text" name="fname" class="form-control" id="fname" placeholder="FirstName">
+           </div>
+         </div>
+         
+         <div class="form-group">
+           <label for="inputLastName" class="col-lg-2 control-label">LastName</label>
+           <div class="col-lg-10">
+             <input type="text" name="lname" class="form-control" id="lname" placeholder="LastName">
+           </div>
+         </div>
+         
+         <div class="form-group">
+           <label for="inputEmail" class="col-lg-2 control-label">Email</label>
+           <div class="col-lg-10">
+             <input type="email" name="email" class="form-control" id="email" placeholder="Email">
+           </div>
+         </div>
+         
+         <div class="form-group">
+           <label for="inputPassword" class="col-lg-2 control-label">Password</label>
+           <div class="col-lg-10">
+             <input type="password" name="password" class="form-control" id="password" placeholder="Password">
+           </div>
+         </div>
+         
+         <div class="form-group">
+           <label for="inputMobile" class="col-lg-2 control-label">Mobile no.</label>
+           <div class="col-lg-10">
+             <input type="number" name="mobile" class="form-control" id="mobile" placeholder="Mobile no.">
+           </div>
+         </div>
+         
+         <div class="form-group">
+           <label for="textArea" class="col-lg-2 control-label">Address</label>
+           <div class="col-lg-10">
+             <textarea type="text" name="address" class="form-control" rows="3" id="address" placeholder="address"></textarea>
+           </div>
+         </div>
+         
+         <div class="form-group">
+           <label for="radioGender" class="col-lg-2 control-label">Gender</label>
+           <div class="col-lg-10">
+             <div class="radio">
+               <label>
+                 <input type="radio" name="gender" id="genderMale" value="Male">Male
+               </label>
+             </div>
+             <div class="radio">
+               <label>
+                 <input type="radio" name="gender" id="genderFemale" value="Female">Female
+               </label>
+             </div>
+           </div>
+         </div>
+         
+         <div class="form-group">
+           <label class="col-lg-2 control-label">Nationality</label>
+           <div class="col-lg-10">
+             <select class="form-control" name="nationality" id="nationality">
+               <option>Select</option>
+               <option>India</option>
+               <option>USA</option>
+               <option>Sri Lanka</option>
+               <option>Indonesia</option>
+             </select>
+           </div>
+         </div>
+         
+         <div class="form-group">
+           <div class='col-lg-offset-2 col-lg-10'>
+             <div class="checkbox">
+               <label>
+                 <input type="checkbox" name="alerts" id="alerts">Subscribe to Alerts
+               </label>
+             </div>
+           </div>
+         </div>
+         <span id="msg"></span>
+         
+         
+         <div class="form-group">
+          <div class="col-lg-offset-2 col-lg-10"></div>
+         </div>
+         <div class="form-group">
+          <div class="col-lg-offset-2 col-lg-10"></div>
+         </div>
+         <div class="form-group">
+          <div class="col-lg-offset-2 col-lg-10"></div>
+         </div>
+         
+         
+         <div class="form-group">
+           <div class="col-lg-offset-2 col-lg-10">
+             <button type="reset" id="reset" name="reset" class="btn btn-default">Cancel</button>
+             <button type="submit" id="submit" name="submit" class="btn btn-primary">Submit</button>
+           </div>
+           
+         </div>
+           
+       </form>
+     </div>
+   
+   
+  <script src="js/main.js"></script>     
+</body>
+</html>
